@@ -1,0 +1,92 @@
+.menu {
+  float: left;
+  height: 100%;
+  margin: 0;
+  border-right: 1px solid $borderMenu;
+  background: $clouds;
+  padding: 0;
+  width: 20%;
+  position: relative;
+
+  .menu_head {
+    .menu_head-icon {
+      width: 100%;
+      float: left;
+    }
+
+    .menu_head-title {
+      width: 100%;
+      float: left;
+      text-align: center;
+      padding-top: 15px;
+      font-size: 30px;
+    }
+  }
+
+  .list {
+    width: 100%;
+    background: inherit;
+    padding-top: 50px;
+    padding-bottom: 4px;
+    float: left;
+
+    .list__tile--link {
+      width: 100%;
+      float: left;
+      cursor: pointer;
+      color: $alphabetMenu;
+      border-radius: 3px;
+      padding: 10px 30px;
+      text-decoration: none;
+      position: relative;
+
+      .active__span {
+        width: 5px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      .list__tile__icon {
+        float: left;
+        display: flex;
+        justify-content: flex-start;
+        min-width: 47px;
+        font-size: 20px;
+
+        i {
+          color: $alphabetMenu;
+        }
+      }
+
+      .active__icon  {
+        color: $activeItemMenuColor !important;
+      }
+
+      .list__tile__title {
+        font-size: 15px;
+        float: left;
+        font-weight: 500;
+      }
+
+      &:hover {
+        background: $activeItemMenuHover;
+        color: $alphabetMenu;
+      }
+    }
+
+    .list__tile--link-active {
+
+      .active__span {
+        background: $activeItemMenuColor;
+      }
+
+      color: $activeItemMenuColor;
+
+      i {
+        color: $activeItemMenuColor !important;
+      }
+    }
+  }
+}

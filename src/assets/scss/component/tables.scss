@@ -1,0 +1,78 @@
+.table__main {
+  float: left;
+  background: white;
+  padding: 0 10px;
+  margin:50px 0;
+  width: 100%;
+
+  .table__row {
+    float: left;
+    text-decoration: none;
+    color: $alphabetContent;
+    width: 100%;
+    cursor: default;
+    min-height: 40px;
+    border-radius: 4px;
+    box-shadow: $secondShadow;
+    margin-bottom: 5px;
+    padding: 0 0 0 5px;
+
+    .table-data {
+      width: 100%;
+      float: left;
+      font-size: 14px;
+      height: 100%;
+
+      .table__th {
+        display: inline;
+        height: 100%;
+        float: left;
+        word-wrap: break-word;
+        padding: 8px 0 8px 3px;
+      }
+
+      .table__td {
+        display: inline;
+        height: 100%;
+        float: left;
+        padding: 7px 0 7px 5px;
+        word-wrap: break-word;
+        color: $actions-color;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+
+    .table-data_click {
+      cursor: pointer;
+    }
+  }
+}
+
+.table_with-out--tags {
+  .table__th--data {
+    width: calc(100% - 20px - 200px) !important;
+  }
+}
+
+.table_2td {
+  @extend .table__main;
+
+  .table__row {
+    .table__th--data {
+      width: calc(40% - 10px - 100px);
+    }
+  }
+}
+
+.table_3td {
+  @extend .table__main;
+
+  .table__row {
+    .table__th--data {
+      width: 33.33%;
+    }
+  }
+}
+
+

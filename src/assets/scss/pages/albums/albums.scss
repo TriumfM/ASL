@@ -1,0 +1,16 @@
+.album_photos {
+  padding: 40px 10px;
+  float: left;
+  width: 100%;
+
+  .photo{
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
